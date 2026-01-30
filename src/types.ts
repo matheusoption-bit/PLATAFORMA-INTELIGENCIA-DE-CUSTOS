@@ -52,6 +52,11 @@ export interface ProjectData {
   recommendedDeadlineMonths: number;
   deadlineMonths: number; // Input do usuário
   deadlineMode: 'auto' | 'manual'; // Controle de comportamento
+
+  /**
+   * Data de início do cálculo da inflação (INCC)
+   */
+  startDate?: string;
 }
 
 export interface WizardState {
